@@ -47,7 +47,7 @@ const Landing_page = () => {
                 <div class="product-grid" id="product-listing">
 
                     <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 1, name: 'Organic Tomatoes', category: 'Vegetable', price: '₹55 / kg', farmer: 'Ram Singh', image: 'https://placehold.co/600x400/FF7E79/333?text=Tomatoes', description: 'Plump, juicy organic tomatoes bursting with flavour. Grown sustainably near Kharagpur. Ideal for salads, sauces, or just eating fresh.' })">
-                        <img src="https://placehold.co/600x400/FF7E79/333?text=Tomatoes" alt="Fresh Tomatoes"></img>
+                        <img src="https://www.naatigrains.com/image/cache/catalog/naatigrains-products/NG121/pure-turmeric-powder-hand-processed-solar-dried-stone-order-now-online-organic-grinded-by-naati-grains-1000x1000.jpg " alt="Fresh Tomatoes"></img>
                         <div class="product-info">
                             <h4>Organic Tomatoes</h4>
                             <p class="product-category">Vegetable</p>
@@ -56,16 +56,16 @@ const Landing_page = () => {
                         </div>
                     </div>
                     <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 2, name: 'Sweet Carrots', category: 'Vegetable', price: '₹45 / kg', farmer: 'Sita Devi', image: 'https://placehold.co/600x400/FFAF61/333?text=Carrots', description: 'Crisp, naturally sweet carrots harvested at peak freshness. Perfect for snacking, cooking, or adding color to your meals.' })">
-                        <img src="https://placehold.co/600x400/FFAF61/333?text=Carrots" alt="Carrots"></img>
+                        <img src="https://ucarecdn.com/459eb7be-115a-4d85-b1d8-deaabc94c643/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="Carrots"></img>
                         <div class="product-info">
-                            <h4>Sweet Carrots</h4>
+                            <h4>Fresh Carrots</h4>
                             <p class="product-category">Vegetable</p>
                             <p class="product-farmer">Sita Devi</p>
                             <p class="product-price">₹45 / kg</p>
                         </div>
                     </div>
                      <div class="product-card" data-category="fruit" onclick="showProductDetail({ id: 3, name: 'Seasonal Mangoes (Langra)', category: 'Fruit', price: '₹130 / kg', farmer: 'Bengal Orchards', image: 'https://placehold.co/600x400/FFF176/333?text=Mangoes', description: 'Deliciously sweet and fibrous Langra mangoes, a seasonal favourite from local orchards. Limited stock available.' })">
-                        <img src="https://placehold.co/600x400/FFF176/333?text=Mangoes" alt="Mangoes"></img>
+                        <img src="https://www.bigbasket.com/media/uploads/p/l/30000974_13-fresho-kesar-mango.jp" alt="Mangoes"></img>
                         <div class="product-info">
                             <h4>Seasonal Mangoes (Langra)</h4>
                             <p class="product-category">Fruit</p>
@@ -74,7 +74,7 @@ const Landing_page = () => {
                         </div>
                     </div>
                     <div class="product-card" data-category="grain" onclick="showProductDetail({ id: 4, name: 'Aged Basmati Rice', category: 'Grain', price: '₹95 / kg', farmer: 'Punjab Harvest Co.', image: 'https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice', description: 'Premium long-grain Basmati rice, carefully aged for over a year to enhance its distinct aroma and fluffy texture upon cooking.' })">
-                        <img src="https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice" alt="Basmati Rice"></img>
+                        <img src="https://www.aeroplanerice.com/wp-content/uploads/2022/03/Basmati-Rice.jpg " alt="Basmati Rice"></img>
                         <div class="product-info">
                             <h4>Aged Basmati Rice</h4>
                              <p class="product-category">Grain</p>
@@ -83,7 +83,7 @@ const Landing_page = () => {
                         </div>
                     </div>
                      <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 5, name: 'Fresh Spinach Bunch', category: 'Vegetable', price: '₹35 / bunch', farmer: 'Green Valley Farms', image: 'https://placehold.co/600x400/AED581/333?text=Spinach', description: 'Tender green spinach leaves, packed with nutrients. Locally sourced and delivered fresh for maximum taste and health benefits.' })">
-                        <img src="https://placehold.co/600x400/AED581/333?text=Spinach" alt="Spinach"></img>
+                        <img src="https://shop.annam-gourmet.com/pub/media/catalog/product/cache/ee0af4cad0f3673c5271df64bd520339/F/1/F141665_d849.png" alt="Spinach"></img>
                         <div class="product-info">
                             <h4>Fresh Spinach Bunch</h4>
                             <p class="product-category">Vegetable</p>
@@ -92,7 +92,7 @@ const Landing_page = () => {
                         </div>
                     </div>
                     <div class="product-card" data-category="dairy" onclick="showProductDetail({ id: 6, name: 'Farm Fresh Paneer', category: 'Dairy', price: '₹120 / 250g', farmer: 'Gopal Dairy', image: 'https://placehold.co/600x400/E1F5FE/444?text=Paneer', description: 'Soft and creamy Malai Paneer made from fresh, full-cream milk sourced directly from local farms. Excellent for curries and grilling.' })">
-                        <img src="https://placehold.co/600x400/E1F5FE/444?text=Paneer" alt="Paneer"></img>
+                        <img src="https://www.seriouseats.com/thmb/jdFyRQOfbKA1COGPrkN5927FiBs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20220628-FreshPaneer-AmandaSuarez-11c5e6f76d064cf88153a93d28384bc8.jpg " alt="Paneer"></img>
                         <div class="product-info">
                             <h4>Farm Fresh Paneer</h4>
                             <p class="product-category">Dairy</p>
@@ -101,7 +101,7 @@ const Landing_page = () => {
                         </div>
                     </div>
                     <div class="product-card" data-category="spice" onclick="showProductDetail({ id: 7, name: 'Sundried Turmeric Powder', category: 'Spice', price: '₹70 / 100g', farmer: 'Spice Routes Farm', image: 'https://placehold.co/600x400/FFCA28/444?text=Turmeric', description: 'Vibrant yellow turmeric powder, ground from high-curcumin sundried turmeric fingers. Adds color, flavour, and health benefits.' })">
-                        <img src="https://placehold.co/600x400/FFCA28/444?text=Turmeric" alt="Turmeric Powder"></img>
+                        <img src="https://www.naatigrains.com/image/cache/catalog/naatigrains-products/NG121/pure-turmeric-powder-hand-processed-solar-dried-stone-order-now-online-organic-grinded-by-naati-grains-1000x1000.jpg " alt="Turmeric Powder"></img>
                         <div class="product-info">
                             <h4>Sundried Turmeric Powder</h4>
                             <p class="product-category">Spice</p>
