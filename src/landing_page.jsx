@@ -1,0 +1,121 @@
+import React from 'react'
+
+const Landing_page = () => {
+  return (
+    <>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">FarmDirect 🌱</div>
+            <div class="header-actions">
+                 <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home" onclick="showView('consumer-view', true)">Home</a></li>
+                        <li><a href="#products-section">Products</a></li>
+                        <li><a href="#join">Join Us</a></li>
+                        <li><a href="#" title="Shopping Cart">🛒 (0)</a></li>
+                    </ul>
+                </nav>
+                <button id="farmer-login-toggle" class="btn btn-secondary btn-sm">Farmer Login</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="pincode-check">
+        <div class="container">
+             <label for="pincode-input">Check Delivery Area:</label>
+             <input type="text" id="pincode-input" placeholder="Enter Pincode" maxlength="6"></input>
+             <button id="pincode-check-btn" class="btn btn-sm">Check</button>
+        </div>
+    </section>
+
+    <main class="container" id="main-content">
+
+        <div id="consumer-view">
+
+            <section id="products-section">
+                <h2>Explore Fresh Produce</h2>
+                <div class="category-filters">
+                    <button class="btn category-btn btn-sm active" onclick="filterProducts('all')">All</button>
+                    <button class="btn category-btn btn-sm" onclick="filterProducts('vegetable')">Vegetables</button>
+                    <button class="btn category-btn btn-sm" onclick="filterProducts('fruit')">Fruits</button>
+                    <button class="btn category-btn btn-sm" onclick="filterProducts('grain')">Grains</button>
+                    <button class="btn category-btn btn-sm" onclick="filterProducts('dairy')">Dairy</button>
+                    <button class="btn category-btn btn-sm" onclick="filterProducts('spice')">Spices</button>
+                </div>
+
+                <div class="product-grid" id="product-listing">
+
+                    <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 1, name: 'Organic Tomatoes', category: 'Vegetable', price: '₹55 / kg', farmer: 'Ram Singh', image: 'https://placehold.co/600x400/FF7E79/333?text=Tomatoes', description: 'Plump, juicy organic tomatoes bursting with flavour. Grown sustainably near Kharagpur. Ideal for salads, sauces, or just eating fresh.' })">
+                        <img src="https://placehold.co/600x400/FF7E79/333?text=Tomatoes" alt="Fresh Tomatoes"></img>
+                        <div class="product-info">
+                            <h4>Organic Tomatoes</h4>
+                            <p class="product-category">Vegetable</p>
+                            <p class="product-farmer">Ram Singh</p>
+                            <p class="product-price">₹55 / kg</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 2, name: 'Sweet Carrots', category: 'Vegetable', price: '₹45 / kg', farmer: 'Sita Devi', image: 'https://placehold.co/600x400/FFAF61/333?text=Carrots', description: 'Crisp, naturally sweet carrots harvested at peak freshness. Perfect for snacking, cooking, or adding color to your meals.' })">
+                        <img src="https://placehold.co/600x400/FFAF61/333?text=Carrots" alt="Carrots"></img>
+                        <div class="product-info">
+                            <h4>Sweet Carrots</h4>
+                            <p class="product-category">Vegetable</p>
+                            <p class="product-farmer">Sita Devi</p>
+                            <p class="product-price">₹45 / kg</p>
+                        </div>
+                    </div>
+                     <div class="product-card" data-category="fruit" onclick="showProductDetail({ id: 3, name: 'Seasonal Mangoes (Langra)', category: 'Fruit', price: '₹130 / kg', farmer: 'Bengal Orchards', image: 'https://placehold.co/600x400/FFF176/333?text=Mangoes', description: 'Deliciously sweet and fibrous Langra mangoes, a seasonal favourite from local orchards. Limited stock available.' })">
+                        <img src="https://placehold.co/600x400/FFF176/333?text=Mangoes" alt="Mangoes"></img>
+                        <div class="product-info">
+                            <h4>Seasonal Mangoes (Langra)</h4>
+                            <p class="product-category">Fruit</p>
+                            <p class="product-farmer">Bengal Orchards</p>
+                            <p class="product-price">₹130 / kg</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="grain" onclick="showProductDetail({ id: 4, name: 'Aged Basmati Rice', category: 'Grain', price: '₹95 / kg', farmer: 'Punjab Harvest Co.', image: 'https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice', description: 'Premium long-grain Basmati rice, carefully aged for over a year to enhance its distinct aroma and fluffy texture upon cooking.' })">
+                        <img src="https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice" alt="Basmati Rice"></img>
+                        <div class="product-info">
+                            <h4>Aged Basmati Rice</h4>
+                             <p class="product-category">Grain</p>
+                            <p class="product-farmer">Punjab Harvest Co.</p>
+                            <p class="product-price">₹95 / kg</p>
+                        </div>
+                    </div>
+                     <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 5, name: 'Fresh Spinach Bunch', category: 'Vegetable', price: '₹35 / bunch', farmer: 'Green Valley Farms', image: 'https://placehold.co/600x400/AED581/333?text=Spinach', description: 'Tender green spinach leaves, packed with nutrients. Locally sourced and delivered fresh for maximum taste and health benefits.' })">
+                        <img src="https://placehold.co/600x400/AED581/333?text=Spinach" alt="Spinach"></img>
+                        <div class="product-info">
+                            <h4>Fresh Spinach Bunch</h4>
+                            <p class="product-category">Vegetable</p>
+                            <p class="product-farmer">Green Valley Farms</p>
+                            <p class="product-price">₹35 / bunch</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="dairy" onclick="showProductDetail({ id: 6, name: 'Farm Fresh Paneer', category: 'Dairy', price: '₹120 / 250g', farmer: 'Gopal Dairy', image: 'https://placehold.co/600x400/E1F5FE/444?text=Paneer', description: 'Soft and creamy Malai Paneer made from fresh, full-cream milk sourced directly from local farms. Excellent for curries and grilling.' })">
+                        <img src="https://placehold.co/600x400/E1F5FE/444?text=Paneer" alt="Paneer"></img>
+                        <div class="product-info">
+                            <h4>Farm Fresh Paneer</h4>
+                            <p class="product-category">Dairy</p>
+                            <p class="product-farmer">Gopal Dairy</p>
+                            <p class="product-price">₹120 / 250g</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="spice" onclick="showProductDetail({ id: 7, name: 'Sundried Turmeric Powder', category: 'Spice', price: '₹70 / 100g', farmer: 'Spice Routes Farm', image: 'https://placehold.co/600x400/FFCA28/444?text=Turmeric', description: 'Vibrant yellow turmeric powder, ground from high-curcumin sundried turmeric fingers. Adds color, flavour, and health benefits.' })">
+                        <img src="https://placehold.co/600x400/FFCA28/444?text=Turmeric" alt="Turmeric Powder"></img>
+                        <div class="product-info">
+                            <h4>Sundried Turmeric Powder</h4>
+                            <p class="product-category">Spice</p>
+                            <p class="product-farmer">Spice Routes Farm</p>
+                            <p class="product-price">₹70 / 100g</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    </>
+  )
+}
+
+export default Landing_page
