@@ -1,0 +1,35 @@
+# Node Modules
+node_modules
+
+# Build Output
+dist
+build
+
+# Vite Cache
+.vite
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Editor/IDE Specific
+.vscode/
+.idea/
+
+# Operating System Specific
+.DS_Store
+Thumbs.db
+
+# Logs and Temp Files
+*.log
+tmp/
+temp/
+
+# Optional: Dependency Cache Directories (if you encounter issues)
+# node_modules/.vite
+# node_modules/.cache
+
+INDEX2.HTML
