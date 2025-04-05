@@ -24,7 +24,7 @@ const Final = () => {
             <section class="pincode-check">
                 <div class="container">
                     <label for="pincode-input">Check Delivery Area:</label>
-                    <input type="text" id="pincode-input" placeholder="Enter Pincode" maxlength="6">
+                    <input type="text" id="pincode-input" placeholder="Enter Pincode" maxlength="6"></input>
                     <button id="pincode-check-btn" class="btn btn-sm">Check</button>
                 </div>
             </section>
@@ -47,7 +47,7 @@ const Final = () => {
                         <div class="product-grid" id="product-listing">
 
                             <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 1, name: 'Organic Tomatoes', category: 'Vegetable', price: '₹55 / kg', farmer: 'Ram Singh', image: 'https://placehold.co/600x400/FF7E79/333?text=Tomatoes', description: 'Plump, juicy organic tomatoes bursting with flavour. Grown sustainably near Kharagpur. Ideal for salads, sauces, or just eating fresh.' })">
-                                <img src="https://placehold.co/600x400/FF7E79/333?text=Tomatoes" alt="Fresh Tomatoes">
+                                <img src="https://placehold.co/600x400/FF7E79/333?text=Tomatoes" alt="Fresh Tomatoes"></img>
                                 <div class="product-info">
                                     <h4>Organic Tomatoes</h4>
                                     <p class="product-category">Vegetable</p>
@@ -56,7 +56,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 2, name: 'Sweet Carrots', category: 'Vegetable', price: '₹45 / kg', farmer: 'Sita Devi', image: 'https://placehold.co/600x400/FFAF61/333?text=Carrots', description: 'Crisp, naturally sweet carrots harvested at peak freshness. Perfect for snacking, cooking, or adding color to your meals.' })">
-                                <img src="https://placehold.co/600x400/FFAF61/333?text=Carrots" alt="Carrots">
+                                <img src="https://placehold.co/600x400/FFAF61/333?text=Carrots" alt="Carrots"></img>
                                 <div class="product-info">
                                     <h4>Sweet Carrots</h4>
                                     <p class="product-category">Vegetable</p>
@@ -65,7 +65,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="fruit" onclick="showProductDetail({ id: 3, name: 'Seasonal Mangoes (Langra)', category: 'Fruit', price: '₹130 / kg', farmer: 'Bengal Orchards', image: 'https://placehold.co/600x400/FFF176/333?text=Mangoes', description: 'Deliciously sweet and fibrous Langra mangoes, a seasonal favourite from local orchards. Limited stock available.' })">
-                                <img src="https://placehold.co/600x400/FFF176/333?text=Mangoes" alt="Mangoes">
+                                <img src="https://placehold.co/600x400/FFF176/333?text=Mangoes" alt="Mangoes"></img>
                                 <div class="product-info">
                                     <h4>Seasonal Mangoes (Langra)</h4>
                                     <p class="product-category">Fruit</p>
@@ -74,7 +74,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="grain" onclick="showProductDetail({ id: 4, name: 'Aged Basmati Rice', category: 'Grain', price: '₹95 / kg', farmer: 'Punjab Harvest Co.', image: 'https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice', description: 'Premium long-grain Basmati rice, carefully aged for over a year to enhance its distinct aroma and fluffy texture upon cooking.' })">
-                                <img src="https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice" alt="Basmati Rice">
+                                <img src="https://placehold.co/600x400/f5f5f5/444?text=Basmati+Rice" alt="Basmati Rice"></img>
                                 <div class="product-info">
                                     <h4>Aged Basmati Rice</h4>
                                     <p class="product-category">Grain</p>
@@ -83,7 +83,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="vegetable" onclick="showProductDetail({ id: 5, name: 'Fresh Spinach Bunch', category: 'Vegetable', price: '₹35 / bunch', farmer: 'Green Valley Farms', image: 'https://placehold.co/600x400/AED581/333?text=Spinach', description: 'Tender green spinach leaves, packed with nutrients. Locally sourced and delivered fresh for maximum taste and health benefits.' })">
-                                <img src="https://placehold.co/600x400/AED581/333?text=Spinach" alt="Spinach">
+                                <img src="https://placehold.co/600x400/AED581/333?text=Spinach" alt="Spinach"></img>
                                 <div class="product-info">
                                     <h4>Fresh Spinach Bunch</h4>
                                     <p class="product-category">Vegetable</p>
@@ -92,7 +92,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="dairy" onclick="showProductDetail({ id: 6, name: 'Farm Fresh Paneer', category: 'Dairy', price: '₹120 / 250g', farmer: 'Gopal Dairy', image: 'https://placehold.co/600x400/E1F5FE/444?text=Paneer', description: 'Soft and creamy Malai Paneer made from fresh, full-cream milk sourced directly from local farms. Excellent for curries and grilling.' })">
-                                <img src="https://placehold.co/600x400/E1F5FE/444?text=Paneer" alt="Paneer">
+                                <img src="https://placehold.co/600x400/E1F5FE/444?text=Paneer" alt="Paneer"></img>
                                 <div class="product-info">
                                     <h4>Farm Fresh Paneer</h4>
                                     <p class="product-category">Dairy</p>
@@ -101,7 +101,7 @@ const Final = () => {
                                 </div>
                             </div>
                             <div class="product-card" data-category="spice" onclick="showProductDetail({ id: 7, name: 'Sundried Turmeric Powder', category: 'Spice', price: '₹70 / 100g', farmer: 'Spice Routes Farm', image: 'https://placehold.co/600x400/FFCA28/444?text=Turmeric', description: 'Vibrant yellow turmeric powder, ground from high-curcumin sundried turmeric fingers. Adds color, flavour, and health benefits.' })">
-                                <img src="https://placehold.co/600x400/FFCA28/444?text=Turmeric" alt="Turmeric Powder">
+                                <img src="https://placehold.co/600x400/FFCA28/444?text=Turmeric" alt="Turmeric Powder"></img>
                                 <div class="product-info">
                                     <h4>Sundried Turmeric Powder</h4>
                                     <p class="product-category">Spice</p>
@@ -116,7 +116,7 @@ const Final = () => {
                         <button id="back-to-products" class="btn btn-sm" onclick="showView('consumer-view', true)">← Back to Products</button>
                         <div class="product-detail-content">
                             <div class="product-detail-image">
-                                <img id="detail-img" src="" alt="Product Image">
+                                <img id="detail-img" src="" alt="Product Image"></img>
                             </div>
                             <div class="product-detail-info">
                                 <h2 id="detail-name">Product Name</h2>
@@ -198,7 +198,7 @@ const Final = () => {
                             <form id="list-product-form" class="list-product-form">
                                 <div class="form-group">
                                     <label for="product-name">Product Name:</label>
-                                    <input type="text" id="product-name" required placeholder="e.g., Fresh Red Onions">
+                                    <input type="text" id="product-name" required placeholder="e.g., Fresh Red Onions"></input>
                                 </div>
                                 <div class="form-group">
                                     <label for="product-category-select">Category:</label>
@@ -215,15 +215,15 @@ const Final = () => {
                                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
                                     <div class="form-group">
                                         <label for="product-price-input">Price (₹):</label>
-                                        <input type="number" id="product-price-input" required min="1" placeholder="e.g., 30">
+                                        <input type="number" id="product-price-input" required min="1" placeholder="e.g., 30"></input>
                                     </div>
                                     <div class="form-group">
                                         <label for="product-unit">Per Unit:</label>
-                                        <input type="text" id="product-unit" required placeholder="e.g., kg, piece, litre">
+                                        <input type="text" id="product-unit" required placeholder="e.g., kg, piece, litre"></input>
                                     </div>
                                     <div class="form-group">
                                         <label for="product-quantity">Quantity Available:</label>
-                                        <input type="number" id="product-quantity" required min="1" placeholder="e.g., 50">
+                                        <input type="number" id="product-quantity" required min="1" placeholder="e.g., 50"></input>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -232,7 +232,7 @@ const Final = () => {
                                 </div>
                                 <div class="form-group">
                                     <label for="product-image">Upload Product Image:</label>
-                                    <input type="file" id="product-image" accept="image/*">
+                                    <input type="file" id="product-image" accept="image/*"></input>
                                 </div>
                                 <button type="submit" class="btn">List This Product</button>
                             </form>
@@ -245,7 +245,7 @@ const Final = () => {
                                 <div class="form-group"><label for="location-f">Location (Village/Area):</label><input type="text" id="location-f" required placeholder="e.g., Gopali near Kharagpur"></input></div>
                                 <div class="form-group"><label for="crop-f">Crop Type:</label><select id="crop-f" required><option value="">-- Select Crop --</option><option value="rice_kharif">Rice (Kharif)</option><option value="rice_rabi">Rice (Rabi)</option><option value="wheat">Wheat</option><option value="maize">Maize</option><option value="potato">Potato</option><option value="mustard">Mustard</option><option value="tomato">Tomato</option></select></div>
                                 <div class="form-group"><label for="soil-f">Dominant Soil Type:</label><select id="soil-f" required><option value="">-- Select Soil --</option><option value="alluvial_gangetic">Alluvial (Gangetic)</option><option value="laterite_red">Laterite/Red</option><option value="sandy_loam">Sandy Loam</option><option value="clayey">Clayey</option></select></div>
-                                <div class="form-group"><label for="area-f">Area (Acres):</label><input type="number" id="area-f" min="0.1" step="0.1" required placeholder="e.g., 2.5"></div>
+                                <div class="form-group"><label for="area-f">Area (Acres):</label><input type="number" id="area-f" min="0.1" step="0.1" required placeholder="e.g., 2.5"></input></div>
                                 <button type="submit" class="btn btn-info">Predict Yield</button>
                             </form>
                             <div id="prediction-output-farmer" class="prediction-result">Enter details above to get prediction...</div>
@@ -256,12 +256,12 @@ const Final = () => {
                             <p>Connect with verified bulk buyers for guaranteed sales contracts.</p>
                             <div style="background-color: var(--light-gray); padding: 1rem; border-radius: var(--border-radius); margin-top: 1rem;">
                                 <h4>Available Contract Example:</h4>
-                                <p><strong>Buyer:</strong> Regional Restaurant Chain <br>
-                                <strong>Crop Needed:</strong> Premium Quality Onions <br>
-                                <strong>Quantity:</strong> 500 kg / month <br>
-                                <strong>Price Offered:</strong> ₹25 / kg (Grade A) <br>
-                                <strong>Duration:</strong> 6 Months
-                                </p>
+                                 <strong>Buyer:</strong> Regional Restaurant Chain <br></br>
+                                    <strong>Crop Needed:</strong> Premium Quality Onions <br></br>
+                                    <strong>Quantity:</strong> 500 kg / month <br></br>
+                                    <strong>Price Offered:</strong> ₹25 / kg (Grade A) <br></br>
+                                    <strong>Duration:</strong> 6 Months
+                                
                                 <button class="btn btn-sm btn-success" style="margin-top: 0.5rem;" onclick="alert('Apply to Contract clicked! (Demo)')">Apply Now</button>
                             </div>
                             <p style="margin-top: 1rem;"><em>More available contracts would be listed here. You can also manage your applications and active agreements.</em></p>
@@ -298,183 +298,11 @@ const Final = () => {
                 </div>
             </footer>
 
-            <script>
-                const consumerView = document.getElementById('consumer-view');
-                const farmerView = document.getElementById('farmer-view');
-                const productListingSection = document.getElementById('products-section');
-                const productListingGrid = document.getElementById('product-listing');
-                const productDetailView = document.getElementById('product-detail-view');
-                const farmerLoginToggle = document.getElementById('farmer-login-toggle');
-                const dashboardArea = document.getElementById('dashboard-area');
-                const categoryButtons = document.querySelectorAll('.category-btn');
-                const pincodeInput = document.getElementById('pincode-input');
-                const pincodeCheckBtn = document.getElementById('pincode-check-btn');
 
-                let isFarmerLoggedIn = false;
-
-                function showView(viewId, showProductList = false) {
-                    consumerView.classList.add('hidden');
-                    farmerView.classList.add('hidden');
-                    productListingSection.classList.add('hidden');
-                    productDetailView.classList.add('hidden');
-
-
-                    if (viewId === 'consumer-view') {
-                        consumerView.classList.remove('hidden');
-                        if (showProductList) {
-                            productListingSection.classList.remove('hidden');
-                        } else {
-                            productListingSection.classList.remove('hidden');
-                        }
-
-                    } else if (viewId === 'farmer-view') {
-                        farmerView.classList.remove('hidden');
-                        showDashboardContent('dashboard-overview');
-
-                    } else if (viewId === 'product-detail-view') {
-                        consumerView.classList.remove('hidden');
-                        productListingSection.classList.add('hidden');
-                        productDetailView.classList.remove('hidden');
-                    }
-                }
-
-
-                function showProductDetail(product) {
-                    document.getElementById('detail-img').src = product.image;
-                    document.getElementById('detail-img').alt = product.name;
-                    document.getElementById('detail-name').textContent = product.name;
-                    document.getElementById('detail-category').textContent = product.category;
-                    document.getElementById('detail-price').textContent = product.price;
-                    document.getElementById('detail-farmer').textContent = product.farmer;
-                    document.getElementById('detail-description').textContent = product.description;
-                    showView('product-detail-view');
-                    window.scrollTo(0, 0);
-                }
-
-
-                function filterProducts(category) {
-                    const products = productListingGrid.querySelectorAll('.product-card');
-                    categoryButtons.forEach(btn => btn.classList.remove('active'));
-                    const activeButton = document.querySelector('.category-btn'[onclick="filterProducts('${category}')"]);
-                    if (activeButton) {
-                        activeButton.classList.add('active');
-                    }
-
-                    products.forEach(product => {
-                        if (category === 'all' || product.getAttribute('data-category') === category) {
-                            product.classList.remove('hidden');
-                        } else {
-                            product.classList.add('hidden');
-                        }
-                    });
-                    showView('consumer-view', true);
-                }
-
-
-                if (pincodeCheckBtn) {
-                    pincodeCheckBtn.addEventListener('click', () => {
-                        const pincode = pincodeInput.value.trim();
-                        if (pincode.match(/^\d{6}$/)) {
-                            const availablePincodes = ['721301', '721302', '721305', '700001', '713343'];
-                            if (availablePincodes.includes(pincode)) {
-                                alert("✅ Great! Delivery is available to pincode ${pincode}.");
-                            } else {
-                                alert("❌ Sorry, delivery is currently unavailable for pincode ${pincode}. Check back later!");
-                            }
-                        } else {
-                            alert('⚠ Please enter a valid 6-digit Indian pincode.');
-                        }
-                    });
-                }
-
-
-                if (farmerLoginToggle) {
-                    farmerLoginToggle.addEventListener('click', () => {
-                        isFarmerLoggedIn = !isFarmerLoggedIn;
-                        if (isFarmerLoggedIn) {
-                            showView('farmer-view');
-                            farmerLoginToggle.textContent = 'Logout';
-                            farmerLoginToggle.classList.remove('btn-secondary');
-                            farmerLoginToggle.classList.add('btn-danger');
-                        } else {
-                            showView('consumer-view', true);
-                            farmerLoginToggle.textContent = 'Farmer Login';
-                            farmerLoginToggle.classList.remove('btn-danger');
-                            farmerLoginToggle.classList.add('btn-secondary');
-                        }
-                    });
-                }
-
-
-                function showDashboardContent(contentId) {
-                    const contentAreas = dashboardArea.querySelectorAll('.dashboard-content');
-                    contentAreas.forEach(area => area.classList.add('hidden'));
-
-                    const areaToShow = document.getElementById(contentId + '-content');
-                    const welcomeArea = document.getElementById('dashboard-overview-content');
-
-                    if (areaToShow) {
-                        areaToShow.classList.remove('hidden');
-                    } else if(contentId === 'dashboard-overview') {
-                        welcomeArea.classList.remove('hidden');
-                    } else {
-                        console.warn("Dashboard content not found:", contentId);
-                        welcomeArea.classList.remove('hidden');
-                        welcomeArea.querySelector('p').textContent = "Selected feature area could not be loaded.";
-                    }
-                }
-
-
-                const listProductForm = document.getElementById('list-product-form');
-                if (listProductForm) {
-                    listProductForm.addEventListener('submit', (e) => {
-                        e.preventDefault();
-                        alert('✅ Product listed successfully! (Demo)');
-                        listProductForm.reset();
-                        showDashboardContent('my-products');
-                    });
-                }
-
-
-
-                const predictionFormFarmer = document.getElementById('ai-prediction-form-farmer');
-                const predictionOutputFarmer = document.getElementById('prediction-output-farmer');
-
-                if (predictionFormFarmer) {
-                    predictionFormFarmer.addEventListener('submit', (event) => {
-                        event.preventDefault();
-                        const area = document.getElementById('area-f').value;
-                        const crop = document.getElementById('crop-f').value;
-
-                        if (!area || !crop) {
-                            predictionOutputFarmer.textContent = '⚠ Please fill in all required fields.';
-                            predictionOutputFarmer.style.color = '#orange';
-                            return;
-                        }
-                        predictionOutputFarmer.innerHTML = '⏳ Calculating prediction...';
-                        predictionOutputFarmer.style.color = '#333';
-
-                        setTimeout(() => {
-                            const estimatedYield = (parseFloat(area) * (Math.random() * 8 + 3)).toFixed(1);
-                            const selectedCropText = document.getElementById('crop-f').selectedOptions[0].text;
-                            predictionOutputFarmer.textContent = "✅ Estimated Yield for ${selectedCropText}: ${estimatedYield} Tonnes (Demo Result)";
-                            predictionOutputFarmer.style.color = 'var(--primary-dark)';
-                        }, 1800);
-                    });
-                }
-
-
-                document.addEventListener('DOMContentLoaded', () => {
-                    showView('consumer-view', true);
-                    filterProducts('all');
-                });
-
-            </script>
-
-        </body>
-        </html>
+    
+        
     </>
   )
 }
 
-export default Final = () => {
+export default Final 
