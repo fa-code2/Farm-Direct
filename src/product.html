@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details - FarmDirect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    .main-header {
+      background: #2e7d32;
+      color: white;
+      padding: 1rem;
+    }
+
+    .main-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .product-detail-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      justify-content: center;
+    }
+
+    .product-detail-img img {
+      width: 400px;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    .product-detail-info {
+      max-width: 600px;
+    }
+
+    .btn {
+      background: #43a047;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 0.5rem 0.5rem 0 0;
+      border-radius: 5px;
+    }
+
+    .btn-secondary {
+      background: #1e88e5;
+    }
+
+    .more-like-this {
+      padding: 2rem;
+    }
+
+    .more-like-this h2 {
+      margin-bottom: 1rem;
+    }
+
+    .more-products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .modal textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 1rem;
+    }
+
+    .close-btn {
+      float: right;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">FarmDirect 🌱</div>
+      <nav class="main-nav">
+        <a href="#">← Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container product-detail-wrapper">
+    <div class="product-detail-img">
+      <img id="product-image" src="" alt="Product Image" />
+    </div>
+    <div class="product-detail-info">
+      <h1 id="product-name">Product Name</h1>
+      <p id="product-category"><strong>Category:</strong></p>
+      <p id="product-farmer"><strong>Farmer:</strong></p>
+      <p id="product-price"><strong>Price:</strong></p>
+      <p id="product-description">Description goes here...</p>
+      <button class="btn">🛒 Add to Cart</button>
+      <button class="btn btn-secondary" onclick="openModal()">💬 Message Farmer</button>
+    </div>
+  </main>
+
+  <section class="more-like-this">
+    <h2>More Like This</h2>
+    <div class="more-products" id="related-products"></div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="messageModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h3>Message the Farmer</h3>
+      <textarea placeholder="Type your message here..."></textarea><br>
+      <button class="btn btn-secondary" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const productData = {
+      1: {
+        name: "Organic Tomatoes",
+        category: "Vegetable",
+        price: "₹55 / kg",
+        farmer: "Ram Singh",
+        image: "https://placehold.co/600x400/FF7E79/333?text=Tomatoes",
+        description: "Plump, juicy organic tomatoes bursting with flavour. Grown sustainably near Kharagpur."
+      },
+      2: {
+        name: "Sweet Carrots",
+        category: "Vegetable",
+        price: "₹45 / kg",
+        farmer: "Sita Devi",
+        image: "https://placehold.co/600x400/FFAF61/333?text=Carrots",
+        description: "Naturally sweet and crunchy. Great for cooking or snacking."
+      },
+      3: {
+        name: "Fresh Coriander",
+        category: "Vegetable",
+        price: "₹25 / bunch",
+        farmer: "Mohd. Arif",
+        image: "https://placehold.co/600x400/9CCC65/333?text=Coriander",
+        description: "Fragrant, farm-fresh coriander leaves for your kitchen."
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id") || "1";
+    const product = productData[id];
+
+    if (product) {
+      document.getElementById("product-name").textContent = product.name;
+      document.getElementById("product-category").innerHTML = `<strong>Category:</strong> ${product.category}`;
+      document.getElementById("product-farmer").innerHTML = `<strong>Farmer:</strong> ${product.farmer}`;
+      document.getElementById("product-price").innerHTML = `<strong>Price:</strong> ${product.price}`;
+      document.getElementById("product-description").textContent = product.description;
+      document.getElementById("product-image").src = product.image;
+
+      // More like this
+      const relatedDiv = document.getElementById("related-products");
+      Object.entries(productData).forEach(([key, item]) => {
+        if (key !== id) {
+          const card = document.createElement("div");
+          card.className = "product-card";
+          card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <h3>${item.name}</h3>
+            <p>${item.price}</p>
+            <a href="?id=${key}" class="btn">View</a>
+          `;
+          relatedDiv.appendChild(card);
+        }
+      });
+    } else {
+      document.querySelector("main").innerHTML = "<p>Product not found.</p>";
+    }
+
+    function openModal() {
+      document.getElementById("messageModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("messageModal").style.display = "none";
+    }
+
+    function sendMessage() {
+      alert("📨 Message sent to the farmer!");
+      closeModal();
+    }
+  </script>
+
+</body>
+</html>
