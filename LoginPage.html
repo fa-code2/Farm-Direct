@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FarmDirect</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --primary-dark: #388E3C;
+            --light-gray: #f4f4f4;
+            --medium-gray: #ddd;
+            --dark-gray: #777;
+            --text-color: #333;
+            --white-color: #fff;
+            --border-radius: 6px;
+            --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #e8f5e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .registration-container {
+            background-color: var(--white-color);
+            padding: 2.5rem 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .registration-container h1 {
+            color: var(--primary-dark);
+            text-align: center;
+            margin-bottom: 0.5em;
+            font-size: 1.8rem;
+        }
+        .registration-container .tagline {
+             text-align: center;
+             color: var(--dark-gray);
+             margin-bottom: 2em;
+             font-size: 1rem;
+         }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .form-options .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-options label {
+            margin-bottom: 0;
+            margin-left: 0.4rem;
+            font-weight: normal;
+            color: var(--dark-gray);
+        }
+        .form-options input[type="checkbox"] {
+             margin-right: 5px;
+             accent-color: var(--primary-color);
+             width: auto;
+             vertical-align: middle;
+        }
+
+        .form-options a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+
+        .signup-link a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+         @media (max-width: 600px) {
+              .registration-container {
+                   padding: 2rem 1.5rem;
+              }
+              .registration-container h1 {
+                   font-size: 1.6rem;
+              }
+              .btn {
+                   padding: 0.7em 1em;
+                   font-size: 0.95rem;
+              }
+              .form-options {
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 10px;
+              }
+         }
+
+    </style>
+</head>
+<body>
+
+    <div class="registration-container">
+        <h1>Welcome Back!</h1>
+        <p class="tagline">Login to access your FarmDirect account.</p>
+
+        <form id="user-login-form" action="#" method="post">
+
+            <div class="form-group">
+                <label for="user-username">Username:</label>
+                <input type="text" id="user-username" name="username" required placeholder="Enter your username">
+            </div>
+
+            <div class="form-group">
+                <label for="user-password">Password:</label>
+                <input type="password" id="user-password" name="password" required placeholder="Enter your password">
+            </div>
+
+            <div class="form-options">
+                 <div class="remember-me">
+                     <input type="checkbox" id="remember-me" name="rememberMe">
+                     <label for="remember-me">Remember Me</label>
+                 </div>
+                 <a href="#">Forgot Password?</a>
+            </div>
+
+
+            <button type="submit" class="btn">Login</button>
+
+            <p class="signup-link">
+                Don't have an account? <a href="registration.html">Sign Up Here</a>
+            </p>
+
+        </form>
+    </div>
+
+<script>
+        
+    const form = document.getElementById('user-login-form');
+
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('user-username').value.trim();
+        const password = document.getElementById('user-password').value;
+
+        try {
+            const res = await fetch('http://localhost:3000/api/products/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            });
+
+            const data = await res.json();
+            if (res.ok) {
+                alert(data.message || 'Login successful!');
+                // Optionally, redirect to a protected page
+                // window.location.href = '/dashboard';
+            } else {
+                alert(data.message || 'Login failed!');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Something went wrong. Please try again later.');
+        }
+    });
+
+
+</script>
+
+</body>
+</html>
